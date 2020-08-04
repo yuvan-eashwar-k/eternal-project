@@ -5,11 +5,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js" integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg==" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
     <title>Eternal | {% block title %}{{ section.title }}{% endblock %}</title>
 </head>
 <body>
+    <!-- Main Navbar -->
+    <nav id="navbar">
+        <a><i class="fas fa-bars"></i></a>
+        <div class="container">
+            <ul>
+                <li><a href="#">Tshirts</a></li>
+                <li><a href="#">Logo</a></li>
+                <li><a href="#">Henley</a></li>
+            </ul>
+        </div>
+       <a><i class="fas fa-shopping-cart"></i></a>
+    </nav>
     {% block content %}
     {% endblock %}
+    <!-- Footer -->
+    <footer id="main-footer">
+        <div class="container">
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Exchange Policy</a></li>
+                <li><a href="#">Shipping Policy</a></li>
+                <li><a href="#">Terms of service</a></li>
+            </ul>
+        </div>
+    </footer>
+    <footer id="secondary-footer">
+        <h1>&copy; 2020 ETERNAL</h1>
+    </footer>
 </body>
 </html>

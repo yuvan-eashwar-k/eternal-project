@@ -1,5 +1,76 @@
+@import 'config';
+@import 'utilities';
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: $primary-font;
+    color: $secondary-color;
+    background: $primary-color;
+}
+
+nav, #main-footer {
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+
+    a {
+        padding: 1.8rem 1rem 1.8rem 2rem;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        transition: all 500ms ease-in-out;
+        cursor: pointer;
+    }
+
+    div {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        ul {
+            width: 100%;
+            text-align: center;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            li {
+                display: inline-block;
+            }
+        }
+    }
+
+    a {
+        color: $secondary-color;
+
+    }
+}
+
+#main-footer {
+    padding-top: 2rem;
+    a {
+        font-size: 1rem;
+    }
+}
+
+#secondary-footer {
+    padding: 2rem 0rem;
+    text-align: center;
+    background: #000;
+    color: $secondary-color;
+}
+

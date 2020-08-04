@@ -1,5 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.container {
+  width: 1100px;
+  margin: 0 auto;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  background: #333;
+}
+
+nav, #main-footer {
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+
+nav a, #main-footer a {
+  padding: 1.8rem 1rem 1.8rem 2rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  transition: all 500ms ease-in-out;
+  cursor: pointer;
+}
+
+nav div, #main-footer div {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+nav div ul, #main-footer div ul {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav div ul li, #main-footer div ul li {
+  display: inline-block;
+}
+
+nav a, #main-footer a {
+  color: #fff;
+}
+
+#main-footer {
+  padding-top: 2rem;
+}
+
+#main-footer a {
+  font-size: 1rem;
+}
+
+#secondary-footer {
+  padding: 2rem 0rem;
+  text-align: center;
+  background: #000;
+  color: #fff;
 }
